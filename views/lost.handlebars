@@ -10,28 +10,34 @@
 
 <body>
 
-<!-- Load icon library -->
+   <!-- Load icon library -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <div>
+	   <div class="dropdown">
+  		   <button type="button" onclick="myFunction()" class="dropbtn">
+            <i class="fa fa-bars"></i>
+         </button>
+  		      <div id="myDropdown" class="dropdown-content" >
+    		      <a href="#">Newest</a>
+    		      <a href="#">Oldest</a>
+    		      <a href="#">Nearby</a>
+  		      </div>
+	   </div>
 
-	<div class="dropdown">
-  		<button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
-  		   <div id="myDropdown" class="dropdown-content" >
-    		   <a href="#">Link 1</a>
-    		   <a href="#">Link 2</a>
-    		   <a href="#">Link 3</a>
-  		   </div>
-	</div>
+      <!-- The form -->
+      <div class="searchBar">
+		   <form class="example" action="action_page.php">
+  		      <input type="text" placeholder="Search.." name="search">
+  		      <button type="submit"><i class="fa fa-search"></i></button>
+		   </form>
+	   </div>
+   </div>
 
-<!-- The form -->
-   <div class="searchBar">
-		<form class="example" action="action_page.php">
-  		   <input type="text" placeholder="Search.." name="search">
-  		   <button type="submit"><i class="fa fa-search"></i></button>
-		</form>
-	</div>
+   <div class="header">
+      <h2>Looking for Something?</h2>
+   </div>
 
-   <h3>Looking for Something?</h3>
-<!--{{#each posts}}
+   <!--{{#each posts}}
    <div class="post" id ="{{id}}">
       <a href="post/{{pid}}">
          <p>{{pid}}</p>
@@ -39,6 +45,23 @@
    </div>
 {{/each}}
   -->
+
+   <!-- TODO: add onclick events to buttons-->
+   <div>
+      <button type="button" id="lbutton">Lost Items</button>     
+      <button type="button" id="fbutton">Found Items</button>
+   </div>
+
+   <div class="bottom">
+      <button type="button" class="newButton">+ New Post</button>
+   </div>
+   
+   <div class="bottom">
+      <button class="back" onclick="window.location.href = '/';">
+         Back
+      </button>
+   </div>
+
 </body>
 
 </html>
