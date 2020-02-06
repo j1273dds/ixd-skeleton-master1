@@ -26,7 +26,7 @@
 
       <!-- The form -->
       <div class="searchBar">
-		   <form class="example" action="action_page.php">
+		   <form class="example">
   		      <input type="text" placeholder="Search.." name="search">
   		      <button type="submit"><i class="fa fa-search"></i></button>
 		   </form>
@@ -47,19 +47,20 @@
   -->
 
    <!-- TODO: add onclick events to buttons-->
-   <div>
-      <button type="button" id="lbutton">Lost Items</button>     
-      <button type="button" id="fbutton">Found Items</button>
+   <div class="top">
+      <a class="btn btn1" type="button" id="lbutton" href="">Lost Items</a>     
+      <a class="btn btn1" type="button" id="fbutton" style=";" href="">Found Items</a>
    </div>
-
+<img src="images/post.png">
+<img src="images/post1.png"
    <div class="bottom">
-      <button type="button" class="newButton">+ New Post</button>
+      <a class ="btn btn1" type="button" class="newButton" href="">+ New Post</a>
    </div>
    
-   <div class="bottom">
-      <button class="back" onclick="window.location.href = '/';">
+   <div class="back">
+      <a class="btn back" onclick="window.location.href = '/';">
          Back
-      </button>
+      </a>
    </div>
 
 </body>

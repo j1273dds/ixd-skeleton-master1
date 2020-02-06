@@ -88,53 +88,28 @@ form.example::after {
   display: table;
 }
 
-.header { 
-   position: absolute;
-   padding: 10px;
-   top: 35px;
-   right: 75px;
+.btn1{
+    color: white;
+    background-image: linear-gradient(to right, #FFCE5B, #F86626);
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+    font-size:30px;
 }
 
-#lbutton {
-   float: left;
-   padding: 10px;
-   text-align: center;
-   height: 35px;
-   width: 199px;
-   margin-top: 25%;
+.top{
+  margin-top:50px;
 }
 
-#fbutton {
-   float: right;
-   padding: 10px;
-   text-align: center;
-   height: 70px;
-   width: 199px;
-   margin-top: 25%;
-}
 
-.bottom {
-   height: 0px;
+.bottom{
+  margin-top:40px;
 }
-
-.newButton {
-   text-align: center;
-   padding: 5px;
-   height: 35px;
-   width: 150px;
-   position: absolute;
-   left: 125px;
-   bottom: 10px;
+img{
+    width: 350px;
 }
-
-.back {
-   text-align: center;
-   padding: 5px;
-   height: 35px;
-   width: 50px;
-   position: absolute;
-   bottom: 10px;
-   left: 10px;
+#fbutton{
+  font-size:40px;
 }
 
 
