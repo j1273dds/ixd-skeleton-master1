@@ -1,3 +1,3 @@
 exports.viewLF = function(req, res) {
-   res.render('lost');
+   res.render('create');
 };
