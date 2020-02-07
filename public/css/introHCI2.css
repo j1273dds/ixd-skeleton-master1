@@ -1,7 +1,9 @@
 /* Dropdown Button */
 .dropbtn {
 /*  background-color: #3498DB;
-*/  color: white;
+*/ 
+  text-align: center;
+  color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -15,10 +17,8 @@
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+  text-align: center;
   padding: 5px;
-  right: 5px;
-  top: 5px;
-  position: absolute;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -29,8 +29,9 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   position: absolute;
-  top: 50px;
-  right: 5px;
+  width: 160px;
+  /*top: 50px;
+  right: 5px;*/
 }
 
 /* Links inside the dropdown */
@@ -52,23 +53,26 @@
   box-sizing: border-box;
 }
 
+form.example {
+   display: inline-block;
+}
+
 /* Style the search field */
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
-  float: left;
-  width: 80%;
-/*  background: #f1f1f1;
-*/}
-.searchBar{
-  width:80%;
-  top:10px;
-  position:absolute;
+  width: 250px;
 }
+
+.searchBar{
+  text-align: center;
+  top:10px;
+}
+
 /* Style the submit button */
 form.example button {
-  width: 20%;
+  width: 50px;
   padding: 10px;
   color: white;
   font-size: 17px;
@@ -88,28 +92,61 @@ form.example::after {
   display: table;
 }
 
-.btn1{
-    color: white;
-    background-image: linear-gradient(to right, #FFCE5B, #F86626);
-    font-weight: 600;
-    border: none;
-    transition: 0.3s;
-    font-size:30px;
+.btn1 {
+  display: inline-block;
+  color: white;
+  background-image: linear-gradient(to right, #CCCCCC, #CCCCCC);
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+  font-size:20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.top .container {
+  text-align: center;
 }
 
 .top{
-  margin-top:50px;
+  margin-top:20px;
 }
-
 
 .bottom{
   margin-top:40px;
+  text-align: center;
 }
+
+.container a {
+  text-align: center;
+}
+
 img{
-    width: 350px;
+  display: block;
+  margin: auto;
+  width: 350px;
 }
+
 #fbutton{
   font-size:40px;
 }
+
+/* back button and new post button */
+.bottom a {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.bottom .back {
+  text-align: center;
+  font-size: 20px;
+  margin-left: -75px;
+  margin-right: 75px;
+}
+
 
 

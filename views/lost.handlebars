@@ -13,30 +13,31 @@
    <!-- Load icon library -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <div>
-	   <div class="dropdown">
-  		   <button type="button" onclick="myFunction()" class="dropbtn">
-            <i class="fa fa-bars"></i>
-         </button>
-  		      <div id="myDropdown" class="dropdown-content" >
-    		      <a href="#">Newest</a>
-    		      <a href="#">Oldest</a>
-    		      <a href="#">Nearby</a>
-  		      </div>
-	   </div>
-
+	   
       <!-- The form -->
       <div class="searchBar">
 		   <form class="example">
   		      <input type="text" placeholder="Search.." name="search">
-  		      <button type="submit"><i class="fa fa-search"></i></button>
+  		      <button type="submit"><i class="fa fa-search"></i></button>   
 		   </form>
-	   </div>
+
+         <!--<div class="dropdown">-->
+  		      <button type="button" onclick="myFunction()" class="dropbtn">
+               <i class="fa fa-bars"></i>
+            </button>
+  		      
+            <div id="myDropdown" class="dropdown-content" >
+    		      <a href="#">Newest</a>
+    		      <a href="#">Oldest</a>
+    		      <a href="#">Nearby</a>
+  		      </div>
+	   <!--   </div>-->
+         
+      </div>
+
    </div>
 
-   <div class="header">
-      <h2>Looking for Something?</h2>
-   </div>
-
+   
    <!--{{#each posts}}
    <div class="post" id ="{{id}}">
       <a href="post/{{pid}}">
@@ -48,20 +49,30 @@
 
    <!-- TODO: add onclick events to buttons-->
    <div class="top">
-      <a class="btn btn1" type="button" id="lbutton" href="">Lost Items</a>     
-      <a class="btn btn1" type="button" id="fbutton" style=";" href="">Found Items</a>
+      <div class="container" class="header">
+         <h2>Looking for Something?</h2>
+      </div>
+      
+      <div class="container">
+         <a class="btn btn1" type="button" id="lbutton" href="">Lost Items</a>     
+         <a class="btn btn1" type="button" id="fbutton" style=";" href="">Found Items</a>
+      </div>
+
    </div>
-<img src="images/post.png">
-<img src="images/post1.png"
-   <div class="bottom">
+
+   <div>
+      <img src="images/post.png">
+      <img src="images/post1.png">
+   </div>
+
+   <div class="bottom" class="container">
+      <a class="back" class="btn btn1" type="button" href="/">
+         Back
+      </a>
+
       <a class ="btn btn1" type="button" class="newButton" href="">+ New Post</a>
    </div>
    
-   <div class="back">
-      <a class="btn back" onclick="window.location.href = '/';">
-         Back
-      </a>
-   </div>
 
 </body>
 
